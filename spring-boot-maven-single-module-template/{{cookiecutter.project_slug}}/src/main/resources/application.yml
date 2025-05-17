@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: {{ cookiecutter.project_name }}
+
+server:
+  shutdown: graceful
+
+management:
+  endpoint:
+    health:
+      probes:
+        add-additional-paths: true
+        enabled: true
+    prometheus:
+      access: read_only
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include:
+          - health
+          - prometheus
+      path-mapping:
+        prometheus: metrics
+  server:
+    port: 8081

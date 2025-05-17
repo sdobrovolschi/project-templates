@@ -1,0 +1,10 @@
+{
+  "project_name": "Demo Cookiecutter",
+  "project_slug": "demo-cookiecutter",
+  "group_id": "com.example",
+  "artifact_id": "cookiecutter",
+  "package_name": "com.example.cookiecutter",
+  "application_class_name": "DemoCookiecutter",
+  "java_version": "21",
+  "spring_boot_version": "3.4.5"
+}
